@@ -1,0 +1,16 @@
+<input name="name" [(ngModel)]="name">
+<button (click)="getTheUser()">getthe user entered</button>
+<br>
+<button (click)="getAll()">get all</button>
+<br>
+User display
+<br>
+<ng-container *ngFor="let user of user$ | async ; let i = index;">
+  UserDetail {{i + 1}}
+  <br>
+  name: {{user.name}}
+  <br>
+  memo: {{user.memo}}
+  <br>
+
+</ng-container>

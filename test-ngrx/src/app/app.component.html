@@ -1,0 +1,12 @@
+Adding users Section
+<br>
+<label>enter name here</label>
+<input name="name" [(ngModel)]="newUser.name">
+<br>
+<label>enter some memo here</label>
+<input name="memo" [(ngModel)]="newUser.memo">
+<br>
+<button (click)="addUser()">add</button>
+
+<br>
+<app-user></app-user>
