@@ -12,10 +12,10 @@ import com.example.repo.INavBarRepository;
 public class NavBarService {
 
 	@Autowired
-	private INavBarRepository navRepo;
+    INavBarRepository navRepo;
 
 	public List<NavigationBar> getNavItems() {
-		return navRepo.findAll();
+		 return navRepo.findAll();
 	}
 
 }
